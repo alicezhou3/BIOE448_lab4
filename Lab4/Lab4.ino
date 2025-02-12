@@ -12,5 +12,10 @@ void setup() {
 
 void loop() {
   // put your main code here, to run repeatedly:
-
+  digitalWrite(trigPin, LOW);
+  delayMicroseconds(2);
+  digitalWrite(trigPin, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(trigPin, LOW);
+  duration = pulseIn(echoPin, HIGH);
 }
